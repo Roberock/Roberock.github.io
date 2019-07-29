@@ -38,15 +38,30 @@
 			  background-color: #333;
 			  color: white; }
 			  
-		.stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0;
-  line-height: 0 }
-
- 
-			  
+					.stretch {
+			  width: 100%;
+			  display: inline-block;
+			  font-size: 0;
+			  line-height: 0 }
 			 
+						 .dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f9f9f9;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  padding: 12px 16px;
+			  z-index: 1;
+			}
+
+			.dropdown:hover .dropdown-content {
+			  display: block;
+			}
 		</style>
 	</head>
 		<body>	
@@ -105,9 +120,23 @@
  Applied Energy, Volume 241, pp 291-301, 2019.   
     </li> 
 	<div class="Row"> 
+			
+	
     <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.apenergy.2019.03.027"> Download </a>   
-          &nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract </a>   
-       &nbsp &nbsp &nbsp  <a class="Column" style="color:blue;"href="#"> BibTex </a>   
+           
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
 	 <span class="stretch"></span>
 </div>
  </span>
@@ -118,11 +147,24 @@ Applied Energy, Volume 210, 15, pp 339-350, 2018.
    </li> 
 	<div class="Row"> 
     <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.apenergy.2017.10.126">Download</a>     </li> 
-          &nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract </a>   
-       &nbsp &nbsp &nbsp  <a class="Column" style="color:blue;"href="#"> BibTex </a>   
+                  
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
 	 <span class="stretch"></span>
 </div>
  </span>
+
  
 <li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli,
  <i>Assessment of Power Grid Vulnerabilities Accounting for Stochastic Loads and Model Imprecision</i>, 
@@ -130,11 +172,24 @@ Applied Energy, Volume 210, 15, pp 339-350, 2018.
    </li> 
 	<div class="Row"> 
     <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ijepes.2017.11.047">Download</a>     </li>  
-          &nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract </a>   
-       &nbsp &nbsp &nbsp  <a class="Column" style="color:blue;"href="#"> BibTex </a>   
+                   
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
 	 <span class="stretch"></span>
 </div>
  </span>
+
 
 <li><span id="Rocchetta2019_d">. R. Rocchetta, E. Patelli, M. Broggi, Q. Huchet, 
  <i>On-Line Bayesian Model Updating for Structural Health Monitoring</i>, 
@@ -142,22 +197,48 @@ Mechanical Sytems and Signal Processing, Volume 103, pp 174-195, 2018.
    </li> 
 	<div class="Row"> 
     <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ymssp.2017.10.015">Download</a>     </li> 
-          &nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract </a>   
-       &nbsp &nbsp &nbsp  <a class="Column" style="color:blue;"href="#"> BibTex </a>   
+               
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
 	 <span class="stretch"></span>
 </div>
  </span>
+
 <li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli, M. Broggi, 
  <i>Do we have enough data? Robust reliability via uncertainty quantification</i>, 
 Applied Mathematical Modelling, Volume 54, pp 710-721, 2018.
     </li> 
 	<div class="Row"> 
     <a class="Column" style="color:blue;"  href="https://doi.org/10.1016/j.apm.2017.10.020">Download</a>      </li> 
-          &nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract </a>   
-       &nbsp &nbsp &nbsp  <a class="Column" style="color:blue;"href="#"> BibTex </a>   
+              
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
 	 <span class="stretch"></span>
 </div>
  </span>
+
  
 
 
@@ -168,11 +249,24 @@ Reliability Engineering and System Safety, Volume 136, pp 47 - 61, 2015.
      </li> 
 	<div class="Row"> 
     <a class="Column" style="color:blue;"  href="https://doi.org/10.1016/j.ress.2014.11.013">Download</a>  
-          &nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract </a>   
-       &nbsp &nbsp &nbsp  <a class="Column" style="color:blue;"href="#"> BibTex </a>   
+                 
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
 	 <span class="stretch"></span>
 </div>
  </span>
+
  
  </ol>
  <hr>  
@@ -181,27 +275,147 @@ Reliability Engineering and System Safety, Volume 136, pp 47 - 61, 2015.
    <ol> 
 <li><span id="Rocchetta2019_d">. R. Rocchetta, L. G. Crespo, S. Kenny,
  <i>Reliability-Based Control Design by Scenario Optimization</i>,
- Dynamic Systems and Control Conference, Park City, Utha, USA, October 2019. </li> </span>
+ Dynamic Systems and Control Conference, Park City, Utha, USA, October 2019. 
+    </li> 
+	<div class="Row"> 
+    <a class="Column" style="color:blue;"  href="/public/pdf/DSCC_2019">Download</a>  
+                 
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
+	 <span class="stretch"></span>
+</div>
+ </span>
 
 <li><span id="Rocchetta2019_d">.R. Rocchetta, L. Bing, E. Patelli, G. Sansavini,
  <i>Effect of Load-Generation Variability on Power Grid Cascading Failures</i>,
-    ESREL 2018 conference, Trondheim, Norway, June 2018.  </li> </span>
+    ESREL 2018 conference, Trondheim, Norway, June 2018. 
+	 </li> 
+	<div class="Row"> 
+    <a class="Column" style="color:blue;"  href="/public/pdf/ESREL_2018">Download</a>  
+                 
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
+	 <span class="stretch"></span>
+</div>
+ </span>
 
 <li><span id="Rocchetta2019_d">.R. Rocchetta, M. Compare, E. Patelli, L. Bellani, E. Zio,
  <i>A Reinforcement Learning Framework for Optimisation of Power Grid Operations and Maintenance</i>,
-8th international workshop on reliable engineering computing, REC 2018, Liverpool, UK, Jully, 2018.  </li> </span>
+8th international workshop on reliable engineering computing, REC 2018, Liverpool, UK, Jully, 2018.  
+ </li> 
+	<div class="Row"> 
+    <a class="Column" style="color:blue;"  href="/public/pdf/REC_2018">Download</a>  
+                 
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
+	 <span class="stretch"></span>
+</div>
+ </span>
 
 <li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli,
  <i>Stochastic Analysis and Reliability-Cost Optimization of Distributed Generators and Air Source Heat Pumps</i>,
- to be presented at the 2nd International Conference on System Reliability and Safety, ICSRS, 2017. doi: 10.1109/ICSRS.2017.8272792 </li> </span>
+ to be presented at the 2nd International Conference on System Reliability and Safety, ICSRS, 2017. doi: 10.1109/ICSRS.2017.8272792 
+  </li> 
+	<div class="Row"> 
+    <a class="Column" style="color:blue;"  href="/public/pdf/ICSRS_2017">Download</a>  
+                 
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
+	 <span class="stretch"></span>
+</div>
+ </span>
 
 <li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli, 
  <i>An Efficient Framework for Reliability Assessment of Power Networks Installing Renewable Generators and Subject to Parametric P-box Uncertainty</i>,
-   Proceedings of the 27th European Safety and Reliability Conference (ESREL 2017), Portoroz, Slovenia, pp. 3253 – 3260. </li> </span>
+   Proceedings of the 27th European Safety and Reliability Conference (ESREL 2017), Portoroz, Slovenia, pp. 3253 – 3260.
+     </li> 
+	<div class="Row"> 
+    <a class="Column" style="color:blue;"  href="/public/pdf/ESREL_2017">Download</a>  
+                 
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
+	 <span class="stretch"></span>
+</div>
+ </span>
 
 <li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli,
  <i>Power Grid Robustness to Severe Failures: Topological and Flow Based Metrics Comparison</i>,
- European Congress on Computational Methods in Applied Sciences and Engineering, ECCOMAS, Crete 2016, pp. 6121-6135. </li> </span>
+ European Congress on Computational Methods in Applied Sciences and Engineering, ECCOMAS, Crete 2016, pp. 6121-6135. 
+   </li> 
+	<div class="Row"> 
+    <a class="Column" style="color:blue;"  href="/public/pdf/ECCOMAS_2016">Download</a>  
+                 
+		  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+						<div class="dropdown-content">
+								<p>Add abstract here</p>
+					   </div>
+			</div>
+			
+			  <div class="dropdown">
+				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+						<div class="dropdown-content">
+								<p>Add BibTex here</p>
+					   </div>
+			</div>   
+	 <span class="stretch"></span>
+</div>
+ </span>
 
 
 </ol>
