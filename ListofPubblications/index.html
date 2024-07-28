@@ -18,7 +18,7 @@
             color: #333333;
         }
 
-        nav {
+        .navbar {
             background-color: #1c1c1c;
             position: fixed;
             width: 100%;
@@ -29,14 +29,18 @@
             padding: 10px 0;
         }
 
-        nav ul {
+        .navbar ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
         }
 
-        nav ul a {
+        .navbar li {
+            margin: 0 20px;
+        }
+
+        .navbar li a {
             display: block;
             color: white;
             text-align: center;
@@ -46,113 +50,111 @@
             transition: background-color 0.3s, color 0.3s;
         }
 
-        nav ul a:hover {
+        .navbar li a:hover {
             background-color: #4CAF50;
             color: #ffffff;
         }
 
-        .container {
+        .navbar li a.active {
+            background-color: #4CAF50;
+        }
+
+        .content {
             padding: 80px 20px;
             max-width: 800px;
             margin: auto;
         }
 
-        .publication {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .publication-title {
-            font-weight: bold;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            padding: 12px 16px;
-            z-index: 1;
-            border-radius: 4px;
-        }
-
-        .dropdown:hover .dropdown-content {
+        .profile-pic {
             display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            width: 150px;
+            margin-bottom: 20px;
+            border: 5px solid #007903;
         }
 
-        .publication a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        .publication a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #1c1c1c;
-            color: white;
+        h1, h2 {
             text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            color: #007903;
         }
 
-        footer ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        p {
+            text-align: justify;
+            line-height: 1.8;
         }
 
-        footer ul li {
-            display: inline;
+        .media-logos {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .media-logos a {
+            color: #007903;
             margin: 0 10px;
-        }
-
-        footer ul a {
-            color: #4CAF50;
-            text-decoration: none;
             transition: color 0.3s;
         }
 
-        footer ul a:hover {
-            color: white;
+        .media-logos a:hover {
+            color: #1c1c1c;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         @media screen and (max-width: 600px) {
-            nav ul {
+            .navbar ul {
                 flex-direction: column;
             }
 
-            footer ul {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            .navbar li {
+                float: none;
             }
         }
     </style>
 </head>
-<body>
-    <div class="navbar">
-        <ul>
-            <li><a href="https://roberock.github.io" class="active"><b>Home</b></a></li>
-            <li><a href="/ListofPubblications"><b>Publications</b></a></li>
-            <li><a href="/cv/CV_RobeRock.pdf"><b>CV</b></a></li>
-            <li><a href="/about"><b>About</b></a></li>
-            <li><a href="/projects"><b> Projects</b></a></li>
-        </ul>
-    </div>
 
+  <body>
+      <div class="navbar">
+          <ul>
+              <li><a href="https://roberock.github.io" class="active"><b>Home</b></a></li>
+              <li><a href="/ListofPubblications"><b>Publications</b></a></li>
+              <li><a href="/cv/CV_RobeRock.pdf"><b>CV</b></a></li>
+              <li><a href="/about"><b>About</b></a></li>
+              <li><a href="/projects"><b> Projects</b></a></li>
+          </ul>
+      </div>
+
+      <div class="content">
+          <img alt="photo" class="profile-pic" src="/public/img/MyProfilePic2.png" />
+          <h1>Roberto Rocchetta</h1>
+          <div class="media-logos">
+              <a href="https://github.com/Roberock"><i class="fa fa-github fa-2x"></i></a>
+              <a href="https://twitter.com/robertorocchet3"><i class="fa fa-twitter fa-2x"></i></a>
+              <a href="https://linkedin.com/in/roberto-rocchetta-737b857a"><i class="fa fa-linkedin fa-2x"></i></a>
+              <a href="https://scholar.google.it/citations?hl=it&user=qMIqumgAAAAJ"><i class="ai ai-google-scholar ai-2x"></i></a>
+              <a href="https://www.researchgate.net/profile/Roberto_Rocchetta"><i class="ai ai-researchgate ai-2x"></i></a>
+          </div>
+      </div>
+
+  </body>
 
 
 
@@ -163,8 +165,6 @@
   <h3 id="peer-reviewed-Journal">Peer-reviewed Jornal Papers</h3>
  <hr>
 <ol class="bibliography">
-
-
 
 
 <li><span id="Rocchetta2019_d"> Roberto Rocchetta,
