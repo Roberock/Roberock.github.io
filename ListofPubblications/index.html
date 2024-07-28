@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
 <head>
     <link href="http://gmpg.org/xfn/11" rel="profile">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <!-- Enable responsiveness on mobile devices -->
+    <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
     <style>
@@ -101,9 +100,42 @@
             color: #1c1c1c;
         }
 
-        .contact-info {
-            text-align: center;
-            margin-top: 20px;
+        .bibliography {
+            max-width: 95%; /* Adjust the max-width as needed */
+            margin: auto;
+        }
+
+        .publication {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .publication-title {
+            font-weight: lighter;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(242, 246, 244, 0.99);
+            min-width: 560px;
+            width: 98%;
+            box-shadow: 0px 8px 26px 0px rgba(0,0,0,0.2);
+            padding: 12px 20px;
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         .contact-info p {
@@ -128,11 +160,56 @@
                 float: none;
             }
         }
+
+
+        footer {
+            background-color: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+
+        footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul a:hover {
+            color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            footer ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 
-  <body>
-      <div class="navbar">
+<body>
+ <div class="navbar">
           <ul>
               <li><a href="https://roberock.github.io" class="active"><b>Home</b></a></li>
               <li><a href="/ListofPubblications"><b>Publications</b></a></li>
@@ -142,7 +219,7 @@
           </ul>
       </div>
 
-      <div class="content">
+ <div class="content">
           <img alt="photo" class="profile-pic" src="/public/img/MyProfilePic2.png" />
           <h1>Roberto Rocchetta</h1>
           <div class="media-logos">
@@ -154,98 +231,254 @@
           </div>
       </div>
 
-  </body>
+ <div style="margin-left:27%;padding:1px 16px;height:1000px;">
+	<hr>
+  		<h3 id="peer-reviewed-Journal">Peer-reviewed Jornal Papers</h3>
+ 	<hr>
+
+	 <ol class="bibliography">
 
 
 
 
-<div style="margin-left:27%;padding:1px 16px;height:1000px;">
- 	<!--<title  class="navbar-nav-item active" >  Publications; </title>  -->  <!-- the title -->
-	 <hr>
-  <h3 id="peer-reviewed-Journal">Peer-reviewed Jornal Papers</h3>
- <hr>
-<ol class="bibliography">
+					<li><span id="Rocchetta2024_b" class="publication-title"> Roberto Rocchetta, Elisa Perrone, Alexander Herzog, Pierre Dersin, Alessandro Di Bucchianico
+			<i> A survey on LED Prognostics and Health Management and uncertainty reduction
+			</i>, Microelectronics Reliability, Vol 157, 2024.</span>
+			<div class="Row">
+				<a class="Column" href="https://doi.org/10.1016/j.microrel.2024.115399">Download</a>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">Abstract</a></span>
+					<div class="dropdown-content">
+						<p>
+							Hybrid Prognostics and Health Management (PHM) frameworks for light-emitting diodes (LEDs) seek accurate remaining useful life (RUL) predictions by merging information from physics-of-failure laws with data-driven models and tools for online monitoring and data collection. Uncertainty quantification (UQ) and uncertainty reduction are essential to achieve accurate predictions and assess the effect of heterogeneous operational-environmental conditions, lack of data, and noises on LED durability. Aleatory uncertainty is considered in hybrid frameworks, and probabilistic models and predictions are applied to account for inherent variability and randomness in the LED lifetime. On the other hand, hybrid frameworks often neglect epistemic uncertainty, lacking formal characterization and reduction methods.
+							In this survey, we propose an overview of accelerated data collection methods and modeling options for LEDs …
+						</p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">BibTex</a></span>
+					<div class="dropdown-content">
+						<p>@article{ROCCHETTA2024115399,
+							title = {A survey on LED Prognostics and Health Management and uncertainty reduction},
+							journal = {Microelectronics Reliability},
+							volume = {157},
+							pages = {115399},
+							year = {2024},
+							issn = {0026-2714},
+							doi = {https://doi.org/10.1016/j.microrel.2024.115399},
+							author = {Roberto Rocchetta and Elisa Perrone and Alexander Herzog and Pierre Dersin and Alessandro {Di Bucchianico}},
+							keywords = {Light emitting diodes, Epistemic uncertainty, Prognostics and Health Management, Uncertainty quantification, Accelerated tests, Optimal design of experiment},
+							 }</p>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<span class="__dimensions_badge_embed__" data-doi="https://doi.org/10.1016/j.microrel.2024.115399" data-style="small_rectangle" data-legend="hover-left"></span>
+			 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 
-<li><span id="Rocchetta2019_d"> Roberto Rocchetta,
- <i> A robust model selection framework for fault detection and system health monitoring with limited failure examples: Heterogeneous data fusion and formal sensitivity bounds</i>,
-   Engineering Applications of Artificial Intelligence, Volume 114, 105140, 2022.  </li>
-	<div class="Row">
+			<li><span id="Rocchetta2024_a" class="publication-title"> Roberto Rocchetta, Zhouzhao Zhan, Willem Dirk van Driel, Alessandro Di Bucchianico
+			<i> Uncertainty analysis and interval prediction of LEDs lifetimes
+			</i>, Reliability Engineering and System Safety, Vol 242, 109715, 2024.</span>
+			<div class="Row">
+				<a class="Column" href="https://doi.org/10.1016/j.ress.2023.109715">Download</a>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">Abstract</a></span>
+					<div class="dropdown-content">
+						<p>
+							Lifetime analyses are crucial for ensuring the durability of new Light-emitting Diodes (LEDs) and uncertainty quantification (UQ)
+							is necessary to quantify a lack of usable failure and degradation data. This work presents a new framework for predicting the
+							lifetime of LEDs in terms of lumen maintenance, effectively quantifying the natural variability of lifetimes (aleatory) as well
+							as the reducible uncertainty resulting from data scarcity (epistemic). Non-parametric survival models are employed for UQ of
+							low-magnitude failures, while a new parametric interval prediction model (IPM) is introduced to characterize the uncertainty in
+							high-magnitude lumen depreciation events and long-term extrapolated lifetimes. The width of interval-valued predictions reflects
+							the inherent variability in degradation paths whilst the epistemic uncertainty, arising from data scarcity, is quantified by a statistical
+							bound on the probability of the prediction errors for future degradation trajectories. A modified exponential flux decay model
+							combined with the Arrhenius equation equips the IPM with physical information on the physics of LED luminous flux degradation.
+							The framework is tested and validated on a novel database of LED degradation trajectories and in comparison to well-established
+							probabilistic predictors. The results of this study support the validity of the proposed approach and the usefulness of the additional
+							UQ capabilities.
+						</p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">BibTex</a></span>
+					<div class="dropdown-content">
+						<p>@article{ROCCHETTA2024109715,
+							title = {Uncertainty analysis and interval prediction of LEDs lifetimes},
+							journal = {Reliability Engineering & System Safety},
+							volume = {242},
+							pages = {109715},
+							year = {2024},
+							issn = {0951-8320},
+							doi = {https://doi.org/10.1016/j.ress.2023.109715},
+							author = {Roberto Rocchetta and Zhouzhao Zhan and Willem Dirk {van Driel} and Alessandro {Di Bucchianico}},
+							keywords = {Light-emitting Diodes, Lifetime, Lumen maintenance, Uncertainty Quantification, Accelerated Degradation Data, Interval Prediction},
+ 						</p>
+					</div>
+				</div>
+			</div>
+		</li>
 
-    <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.engappai.2022.105140"> Download </a>
+	<span class="__dimensions_badge_embed__" data-doi="https://doi.org/10.1016/j.ress.2023.109715" data-style="small_rectangle" data-legend="hover-left"></span>
+			 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-		  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
-						<div class="dropdown-content">
-				 <p>      Fault detection models play a fundamental role in monitoring the health state of engineering systems subject to degradation processes. Data-driven fault detection models, albeit very effective when trained on large databases of failures, fail to perform well under a lack of failure examples. Because reliable engineering systems seldom fail, data shortage is often inevitable. To overcomes failure data scarcity, this work proposes a new model selection framework for the robust selection of fault detection and system health monitoring models. We combine heterogeneous sources of information (time-to-failure and sensors data), a model of the system structure, and mathematical bounds on the sensitivity and specificity of components fault classifiers. We use Support Vector Machines (SVMs) to detect components faults and Scenario theory to derive formal sensitivity and specificity bounds. The component predictions are combined within a system structure-function for system health states estimation. A novel model selection strategy optimizes the hyper-parameters of the SVM ensemble by minimizing system-level prediction errors and generalization error bounds of the individual fault classifiers. One of the main advantages of the proposed framework is a set of formal epistemic bounds on fault detection and false alarm probabilities quantifying the lack of data uncertainty affecting the fault detection rate. We test the method on three representative case studies: (1) On randomized fault detection experiments with synthetic data, (2) on ten SVM models for predictive maintenance of industrial health care imaging systems, and (3) on a real-world PHM challenge problem. The results prove the efficacy of the proposed approach and its usefulness for solving fault detection.
-                                </p>
-			  </div>
-		</div>
 
-			  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
-						<div class="dropdown-content">
-					       <p>  @article{ROCCHETTA2022105140,
+			<li><span id="Ozcel2023z_PV_impact" class="publication-title"> Ozcel Cangul, Roberto Rocchetta, Murat Fahrioglu, Edoardo Patelli
+			<i>  Optimal allocation and sizing of decentralized solar photovoltaic generators using unit financial impact indicator
+			</i>, Sustainability, Vol 15, 2023.</span>
+			<div class="Row">
+				<a class="Column" href="https://www.mdpi.com/2071-1050/15/15/11715">Download</a>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">Abstract</a></span>
+					<div class="dropdown-content">
+						<p>
+						A novel financial metric denominated unit financial impact indicator (UFII) is proposed to minimize the payback period for solar photovoltaic (PV) systems investments and quantify the financial efficiency of allocation and sizing strategies. However, uncontrollable environmental conditions and operational uncertainties, such as variable power demands, component failures, and weather conditions, can threaten the robustness of the investment, and their effect needs to be accounted for. Therefore, a new probabilistic framework is proposed for the robust and optimal positioning and sizing of utility-scale PV systems in a transmission network. The probabilistic framework includes a new cloud intensity simulator to model solar photovoltaic power production based on historical data and quantified using an efficient Monte Carlo method. The optimized solution obtained using weighted sums of expected UFII and its variance is compared against those obtained by using well-established economic metrics from literature. The efficiency and usefulness of the proposed approach are tested on the 14-bus IEEE power grid case study. The results prove the applicability and efficacy of the new probabilistic metric to quantify the financial effectiveness of solar photovoltaic investments on different nodes and geographical regions in a power grid, considering the unavoidable conditional and operational uncertainty.
+						</p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">BibTex</a></span>
+					<div class="dropdown-content">
+						<p>@Article{su151511715,
+							AUTHOR = {Cangul, Ozcel and Rocchetta, Roberto and Fahrioglu, Murat and Patelli, Edoardo},
+							TITLE = {Optimal Allocation and Sizing of Decentralized Solar Photovoltaic Generators Using Unit Financial Impact Indicator},
+							JOURNAL = {Sustainability},
+							VOLUME = {15},
+							YEAR = {2023},
+							NUMBER = {15},
+							ARTICLE-NUMBER = {11715},
+							URL = {https://www.mdpi.com/2071-1050/15/15/11715},
+							ISSN = {2071-1050},
+							ABSTRACT = {A novel financial metric denominated unit financial impact indicator (UFII) is proposed to minimize the payback period for solar photovoltaic (PV) systems investments and quantify the financial efficiency of allocation and sizing strategies. However, uncontrollable environmental conditions and operational uncertainties, such as variable power demands, component failures, and weather conditions, can threaten the robustness of the investment, and their effect needs to be accounted for. Therefore, a new probabilistic framework is proposed for the robust and optimal positioning and sizing of utility-scale PV systems in a transmission network. The probabilistic framework includes a new cloud intensity simulator to model solar photovoltaic power production based on historical data and quantified using an efficient Monte Carlo method. The optimized solution obtained using weighted sums of expected UFII and its variance is compared against those obtained by using well-established economic metrics from literature. The efficiency and usefulness of the proposed approach are tested on the 14-bus IEEE power grid case study. The results prove the applicability and efficacy of the new probabilistic metric to quantify the financial effectiveness of solar photovoltaic investments on different nodes and geographical regions in a power grid, considering the unavoidable conditional and operational uncertainty.},
+							DOI = {10.3390/su151511715}
+							}
+ 						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<span class="__dimensions_badge_embed__" data-doi="https://doi.org/10.3390/su151511715" data-style="small_rectangle" data-legend="hover-left"></span>
+			 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+
+
+			<li><span id="Rocchetta2023_a" class="publication-title"> Roberto Rocchetta, Alexander May, Frans A. Oliehoek
+			<i> A survey on scenario theory, complexity, and compression-based learning and generalization
+			</i>, IEEE Transactions on Neural Networks and Learning Systems, 2023.</span>
+			<div class="Row">
+				<a class="Column" href="https://ieeexplore.ieee.org/document/10250820">Download</a>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">Abstract</a></span>
+					<div class="dropdown-content">
+						<p>
+							This work investigates formal generalization error bounds that apply to support vector machines (SVMs) in realizable and agnostic learning problems. We focus on recently observed parallels between probably approximately correct (PAC)-learning bounds, such as compression and complexity-based bounds, and novel error guarantees derived within scenario theory. Scenario theory provides nonasymptotic and distributional-free error bounds for models trained by solving data-driven decision-making problems. Relevant theorems and assumptions are reviewed and discussed. We propose a numerical comparison of the tightness and effectiveness of theoretical error bounds for support vector classifiers trained on several randomized experiments from 13 real-life problems. This analysis allows for a fair comparison of different approaches from both conceptual and experimental standpoints. Based on the numerical results, we argue that the error guarantees derived from scenario theory are often tighter for realizable problems and always yield informative results, i.e., probability bounds tighter than a vacuous [0,1] interval. This work promotes scenario theory as an alternative tool for model selection, structural-risk minimization, and generalization error analysis of SVMs. In this way, we hope to bring the communities of scenario and statistical learning theory closer, so that they can benefit from each other’s insights.
+						</p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">BibTex</a></span>
+					<div class="dropdown-content">
+						<p>@ARTICLE{10250820,
+						  author={Rocchetta, Roberto and Mey, Alexander and Oliehoek, Frans A.},
+						  journal={IEEE Transactions on Neural Networks and Learning Systems},
+						  title={A Survey on Scenario Theory, Complexity, and Compression-Based Learning and Generalization},
+						  year={2023},
+						  volume={},
+						  number={},
+						  pages={1-15},
+						  keywords={Data models;Complexity theory;Numerical models;Statistical learning;Decision making;Support vector machine classification;Picture archiving and communication systems;Agnostic learning;compression;generalization theory;probably approximately correct (PAC);scenario optimization;support vector classifiers},
+						  doi={10.1109/TNNLS.2023.3308828}}
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+
+		<span class="__dimensions_badge_embed__" data-doi=" 10.1109/TNNLS.2023.3308828" data-style="small_rectangle" data-legend="hover-left">
+	</span>
+		 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+
+		<li><span id="Rocchetta2022_a" class="publication-title">Roberto Rocchetta, Qi Gao,  Dimitrios Mavroeidis, Milan Petkovic
+			<i>A robust model selection framework for fault detection and system health monitoring with limited failure examples: Heterogeneous data fusion and formal sensitivity bounds</i>,
+			Engineering Applications of Artificial Intelligence, Volume 114, 105140, 2022.</span>
+			<div class="Row">
+				<a class="Column" href="https://doi.org/10.1016/j.engappai.2022.105140">Download</a>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">Abstract</a></span>
+					<div class="dropdown-content">
+						<p>Fault detection models play a fundamental role in monitoring the health state of engineering systems subject to degradation processes. Data-driven fault detection models, albeit very effective when trained on large databases of failures, fail to perform well under a lack of failure examples. Because reliable engineering systems seldom fail, data shortage is often inevitable. To overcome failure data scarcity, this work proposes a new model selection framework for the robust selection of fault detection and system health monitoring models. We combine heterogeneous sources of information (time-to-failure and sensors data), a model of the system structure, and mathematical bounds on the sensitivity and specificity of components fault classifiers. We use Support Vector Machines (SVMs) to detect components faults and Scenario theory to derive formal sensitivity and specificity bounds. The component predictions are combined within a system structure-function for system health states estimation. A novel model selection strategy optimizes the hyper-parameters of the SVM ensemble by minimizing system-level prediction errors and generalization error bounds of the individual fault classifiers. One of the main advantages of the proposed framework is a set of formal epistemic bounds on fault detection and false alarm probabilities quantifying the lack of data uncertainty affecting the fault detection rate. We test the method on three representative case studies: (1) On randomized fault detection experiments with synthetic data, (2) on ten SVM models for predictive maintenance of industrial health care imaging systems, and (3) on a real-world PHM challenge problem. The results prove the efficacy of the proposed approach and its usefulness for solving fault detection.</p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>&nbsp;&nbsp;&nbsp;<a class="Column" href="#">BibTex</a></span>
+					<div class="dropdown-content">
+						<p>@article{ROCCHETTA2022105140,
 							title = {A robust model selection framework for fault detection and system health monitoring with limited failure examples: Heterogeneous data fusion and formal sensitivity bounds},
 							journal = {Engineering Applications of Artificial Intelligence},
 							volume = {114}, pages = {105140}, year = {2022}, issn = {0952-1976},
 							doi = {https://doi.org/10.1016/j.engappai.2022.105140},
 							url = {https://www.sciencedirect.com/science/article/pii/S0952197622002627},
 							author = {Roberto Rocchetta and Qi Gao and Dimitrios Mavroeidis and Milan Petkovic},
-							keywords = {PHM, Fault detection, Sensitivity bounds, Information fusion, SVM, System health monitoring}} </p>
-					   </div>
+							keywords = {PHM, Fault detection, Sensitivity bounds, Information fusion, SVM, System health monitoring}}
+						</p>
+					</div>
+				</div>
 			</div>
-	 <span class="stretch"></span>
-</div>
- </span>
+		</li>
 
-
-<span class="__dimensions_badge_embed__" data-doi="10.1001/j.engappai.2022.1051405" data-style="small_rectangle">
+		<span class="__dimensions_badge_embed__" data-doi="10.1001/j.engappai.2022.1051405" data-style="small_rectangle">
 	</span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-	<!-- --------------------------------------------- -->
-
-<li><span id="Rocchetta2019_d"> Roberto Rocchetta,
- <i> Enhancing the resilience of critical infrastructures: Statistical analysis of power grid spectral clustering and post-contingency vulnerability metric</i>,
-   Renewable and Sustinable Energy Reviews, Volume 171, 108889, 2022.  </li>
-	<div class="Row">
-
-    <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.rser.2022.112185"> Download </a>
-
-		  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
-						<div class="dropdown-content">
-							<p>  	Controlled islanding can enhance power grid resilience and help mitigate the effect of emerging failure by splitting the grid into islands that can be rapidly and independently recovered and managed. In practice, controlled islanding is challenging and requires vulnerability assessment and uncertainty quantification. In this work, we investigate robustness drops due to − line failures and a controlled partitioning strategy for mitigating their consequences. A spectral clustering algorithm is employed to decompose the adjacency matrix of the damaged network and identify optimal network partitions. The adjacency matrix summarizes the power system topology, and different dynamic and static electrical factors such as line impedance and flows are employed to weigh the importance of the grid's cables. Differently from other works, we propose a statistical correlation analysis between vulnerability metrics and goodness of cluster scores. We investigate expected trends in the scores for randomized contingencies of increasing orders and examine their variability for random outages of a given size. We observed that the spectral radius and natural connectivity vary less on randomized failure events of a given size and are more sensitive to the selection of the adjacency matrix weights. Vulnerability scores based on the algebraic connectivity have a higher coefficient of variation for a given damage size and are less dependent on the specific dynamic and static electrical weighting factors. We show a few consistent patterns in the correlations between the scores for the vulnerability of the grid and the optimal clusters. The strength and sign of the correlation coefficients depend on the different electrical factors weighting the transmission lines and the grid-specific topology.	</p>
-			  </div>
-		</div>
-
+	<li>
+		<span id="Rocchetta2022_d" class="publication-title"> Roberto Rocchetta,
+	 <i>
+		 Enhancing the resilience of critical infrastructures: Statistical analysis of power grid spectral clustering and post-contingency vulnerability metric
+	 </i>,
+	   Renewable and Sustinable Energy Reviews, Volume 171, 108889, 2022.
+	</li>
+		<div class="Row">
+		<a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.rser.2022.112185"> Download </a>
 			  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
-						<div class="dropdown-content">
-					       <p> @article{ROCCHETTA2022112185,
-						title = {Enhancing the resilience of critical infrastructures: Statistical analysis of power grid spectral clustering and post-contingency vulnerability metrics},
-						journal = {Renewable and Sustainable Energy Reviews},
-						volume = {159}, pages = {112185}, year = {2022}, issn = {1364-0321},
-						doi = {https://doi.org/10.1016/j.rser.2022.112185},
-						url = {https://www.sciencedirect.com/science/article/pii/S1364032122001095},
-						author = {Roberto Rocchetta},
-						keywords = {Resilience, Vulnerability, Power grid,  contingencies, Spectral clustering, Networks topology}} </p>
-					   </div>
-			</div>
-	 <span class="stretch"></span>
-</div>
- </span>
+					<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+							<div class="dropdown-content">
+								<p>  Controlled islanding can enhance power grid resilience and help mitigate the
+									effect of emerging failure by splitting the grid into islands that can be rapidly and independently
+									recovered and managed. In practice, controlled islanding is challenging and requires vulnerability
+									assessment and uncertainty quantification. In this work, we investigate robustness drops due to
+									line failures and a controlled partitioning strategy for mitigating their consequences.
+									A spectral clustering algorithm is employed to decompose the adjacency matrix of the damaged network and identify optimal network partitions. The adjacency matrix summarizes the power system topology, and different dynamic and static electrical factors such as line impedance and flows are employed to weigh the importance of the grid's cables. Differently from other works, we propose a statistical correlation analysis between vulnerability metrics and goodness of cluster scores. We investigate expected trends in the scores for randomized contingencies of increasing orders and examine their variability for random outages of a given size. We observed that the spectral radius and natural connectivity vary less on randomized failure events of a given size and are more sensitive to the selection of the adjacency matrix weights. Vulnerability scores based on the algebraic connectivity have a higher coefficient of variation for a given damage size and are less dependent on the specific dynamic and static electrical weighting factors. We show a few consistent patterns in the correlations between the scores for the vulnerability of the grid and the optimal clusters. The strength and sign of the correlation coefficients depend on the different electrical factors weighting the transmission lines and the grid-specific topology.
+								</p>
+				  			</div>
+			  </div>
+			  <div class="dropdown">
+					<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+							<div class="dropdown-content">
+							   <p> @article{ROCCHETTA2022112185,
+							title = {Enhancing the resilience of critical infrastructures: Statistical analysis of power grid spectral clustering and post-contingency vulnerability metrics},
+							journal = {Renewable and Sustainable Energy Reviews},
+							volume = {159}, pages = {112185}, year = {2022}, issn = {1364-0321},
+							doi = {https://doi.org/10.1016/j.rser.2022.112185},
+							url = {https://www.sciencedirect.com/science/article/pii/S1364032122001095},
+							author = {Roberto Rocchetta},
+							keywords = {Resilience, Vulnerability, Power grid,  contingencies, Spectral clustering, Networks topology}} </p>
+						   </div>
+		      </div>
+		 <span class="stretch"></span>
+		</div>
+	 </span>
 
-<span class="__dimensions_badge_embed__" data-doi="10.1016/j.rser.2022.112185" data-style="small_rectangle">
-</span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+	<span class="__dimensions_badge_embed__" data-doi="10.1016/j.rser.2022.112185" data-style="small_rectangle">
+	</span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-	<!-- --------------------------------------------- -->
 
-<li><span id="Rocchetta2019_d"> Wenhua Zhao, Lechang Yang, Chao Dang, Roberto Rocchetta, Marcos Valdebenito, David Moens,
+<li><span id="Rocchetta2019_d" class="publication-title"> Wenhua Zhao, Lechang Yang, Chao Dang, Roberto Rocchetta, Marcos Valdebenito, David Moens,
  <i> Enriching stochastic model updating metrics: An efficient Bayesian approach using Bray-Curtis distance and an adaptive binning algorithm</i>,
    Mechanical Systems and Signal Processing, Volume 171, 108889, 2022.  </li>
 	<div class="Row">
-
     <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ymssp.2022.108889"> Download </a>
 
 		  <div class="dropdown">
@@ -288,139 +521,131 @@
 
 	<!-- --------------------------------------------- -->
 
-<li><span id="Rocchetta2019_d"> A. Gray, A. Wimbush, M. de Angelis, P.O. Hristov, D. Calleja, E. Miralles-Dolz, R. Rocchetta,
- <i>From inference to design: A comprehensive framework for uncertainty quantification in engineering with limited information</i>,
- Mechanical Systems and Signal Processing, Volume 165, 108210, 2022.
-    </li>
+		<span id="Rocchetta2022_b" class="publication-title"> A. Gray, A. Wimbush, M. de Angelis, P.O. Hristov, D. Calleja, E. Miralles-Dolz, R. Rocchetta,
+		<i>From inference to design: A comprehensive framework for uncertainty quantification in engineering with limited information</i>, Mechanical Systems and Signal Processing, Volume 165, 108210, 2022.
+		<div class="Row">
+			<a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ymssp.2021.108210"> Download </a>
+				  <div class="dropdown">
+						<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+								<div class="dropdown-content">
+									<p>   In this paper we present a framework for addressing a variety of engineering design challenges with limited empirical data and partial information. This framework includes guidance on the characterisation of a mixture of uncertainties, efficient methodologies to integrate data into design decisions, and to conduct reliability analysis, and risk/reliability based design optimisation. To demonstrate its efficacy, the framework has been applied to the NASA 2020 uncertainty quantification challenge. The results and discussion in the paper are with respect to this application.	</p>
+					  </div>
+				</div>
+					  <div class="dropdown">
+						<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+								<div class="dropdown-content">
+								   <p>@article{GRAY2022108210,
+										title = {From inference to design: A comprehensive framework for uncertainty quantification in engineering with limited information},
+										journal = {Mechanical Systems and Signal Processing},
+										volume = {165},
+										pages = {108210},
+										year = {2022},
+										issn = {0888-3270},
+										doi = {https://doi.org/10.1016/j.ymssp.2021.108210},
+										url = {https://www.sciencedirect.com/science/article/pii/S0888327021005859},
+										author = {A. Gray and A. Wimbush and M. {de Angelis} and P.O. Hristov and D. Calleja and E. Miralles-Dolz and R. Rocchetta},
+										keywords = {Bayesian calibration, Probability bounds analysis, Uncertainty propagation, Uncertainty reduction, Epistemic uncertainty, Optimisation under uncertainty},
+										abstract = {In this paper we present a framework for addressing a variety of engineering design challenges with limited empirical data and partial information. This framework includes guidance on the characterisation of a mixture of uncertainties, efficient methodologies to integrate data into design decisions, and to conduct reliability analysis, and risk/reliability based design optimisation. To demonstrate its efficacy, the framework has been applied to the NASA 2020 uncertainty quantification challenge. The results and discussion in the paper are with respect to this application.}
+										}
+								   </p>
+							   </div>
+					</div>
+			 <span class="stretch"></span>
+		</div>
+		</span>
+		<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ymssp.2021.108210" data-style="small_rectangle"></span>
+		<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+
+	<!-- --------------------------------------------- -->
+
+	<span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, L. G. Crespo
+		 <i> A scenario optimization approach to reliability-based and risk-based design: Soft-constrained modulation of failure probability bounds </i>,
+		 Reliability Engineering & System Safety, Volume 216, 107900, 2021.
+
 	<div class="Row">
+	<a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ress.2021.107900"> Download </a>
 
-    <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ymssp.2021.108210"> Download </a>
-
-		  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
-						<div class="dropdown-content">
-							<p>   In this paper we present a framework for addressing a variety of engineering design challenges with limited empirical data and partial information. This framework includes guidance on the characterisation of a mixture of uncertainties, efficient methodologies to integrate data into design decisions, and to conduct reliability analysis, and risk/reliability based design optimisation. To demonstrate its efficacy, the framework has been applied to the NASA 2020 uncertainty quantification challenge. The results and discussion in the paper are with respect to this application.	</p>
-			  </div>
+		<div class="dropdown">
+		<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+			<div class="dropdown-content">
+				<p> Reliability-based design approaches via scenario optimization are driven by data thereby eliminating the need for creating a probabilistic model of the uncertain parameters. A scenario approach not only yields a reliability-based design that is optimal for the existing data, but also a probabilistic certificate of its correctness against future data drawn from the same source. In this article, we seek designs that minimize not only the failure probability but also the risk measured by the expected severity of requirement violations. The resulting risk-based solution is equipped with a probabilistic certificate of correctness that depends on both the amount of data available and the complexity of the design architecture. This certificate is comprised of an upper and lower bound on the probability of exceeding a value-at-risk (quantile) level. A reliability interval can be easily derived by selecting a specific quantile value and it is mathematically guaranteed for any reliability constraints having a convex dependency on the decision variable, and an arbitrary dependency on the uncertain parameters. Furthermore, the proposed approach enables the analyst to mitigate the effect of outliers in the data set and to trade-off the reliability of competing requirements.
+				</p>
+			</div>
 		</div>
 
-			  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
-						<div class="dropdown-content">
-					       <p>@article{GRAY2022108210,
-title = {From inference to design: A comprehensive framework for uncertainty quantification in engineering with limited information},
-journal = {Mechanical Systems and Signal Processing},
-volume = {165},
-pages = {108210},
-year = {2022},
-issn = {0888-3270},
-doi = {https://doi.org/10.1016/j.ymssp.2021.108210},
-url = {https://www.sciencedirect.com/science/article/pii/S0888327021005859},
-author = {A. Gray and A. Wimbush and M. {de Angelis} and P.O. Hristov and D. Calleja and E. Miralles-Dolz and R. Rocchetta},
-keywords = {Bayesian calibration, Probability bounds analysis, Uncertainty propagation, Uncertainty reduction, Epistemic uncertainty, Optimisation under uncertainty},
-abstract = {In this paper we present a framework for addressing a variety of engineering design challenges with limited empirical data and partial information. This framework includes guidance on the characterisation of a mixture of uncertainties, efficient methodologies to integrate data into design decisions, and to conduct reliability analysis, and risk/reliability based design optimisation. To demonstrate its efficacy, the framework has been applied to the NASA 2020 uncertainty quantification challenge. The results and discussion in the paper are with respect to this application.}
-}</p>
-					   </div>
-			</div>
-	 <span class="stretch"></span>
-</div>
- </span>
+				  <div class="dropdown">
+					<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+							<div class="dropdown-content">
+							   <p> @article{ROCCHETTA2021107900,
+	title = {A scenario optimization approach to reliability-based and risk-based design: Soft-constrained modulation of failure probability bounds},
+	journal = {Reliability Engineering & System Safety},
+	volume = {216},pages = {107900},year = {2021},issn = {0951-8320},
+	doi = {https://doi.org/10.1016/j.ress.2021.107900},
+	url = {https://www.sciencedirect.com/science/article/pii/S095183202100418X},
+	author = {Roberto Rocchetta and Luis G. Crespo},
+	keywords = {Reliability-based design optimization, Scenario theory, Reliability bounds, Conditional value-at-risk, Constraints relaxation, Lack of data uncertainty, Convex programs},
+	abstract = {Reliability-based design approaches via scenario optimization are driven by data thereby eliminating the need for creating a probabilistic model of the uncertain parameters. A scenario approach not only yields a reliability-based design that is optimal for the existing data, but also a probabilistic certificate of its correctness against future data drawn from the same source. In this article, we seek designs that minimize not only the failure probability but also the risk measured by the expected severity of requirement violations. The resulting risk-based solution is equipped with a probabilistic certificate of correctness that depends on both the amount of data available and the complexity of the design architecture. This certificate is comprised of an upper and lower bound on the probability of exceeding a value-at-risk (quantile) level. A reliability interval can be easily derived by selecting a specific quantile value and it is mathematically guaranteed for any reliability constraints having a convex dependency on the decision variable, and an arbitrary dependency on the uncertain parameters. Furthermore, the proposed approach enables the analyst to mitigate the effect of outliers in the data set and to trade-off the reliability of competing requirements.}
+	}</p>
+						   </div>
+				</div>
+		 <span class="stretch"></span>
+	</div>
+	 </span>
+
+	<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ress.2021.107900" data-style="small_rectangle">
+	</span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+	<!-- --------------------------------------------- -->
+	<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, Q. Gao, M. Petkovic
+	 <i>Soft-constrained interval predictor models and epistemic reliability intervals: A new tool for uncertainty quantification with limited experimental data</i>,
+	 Mechanical Systems and Signal Processing, Volume 161, 107973, 2021.
+		</li>
+		<div class="Row">
 
 
-<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ymssp.2021.108210" data-style="small_rectangle"></span>
-<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
-
-<!-- --------------------------------------------- -->
-
-<li><span id="Rocchetta2019_d">.R. Rocchetta, L. G. Crespo
- <i> A scenario optimization approach to reliability-based and risk-based design: Soft-constrained modulation of failure probability bounds </i>,
- Reliability Engineering & System Safety, Volume 216, 107900, 2021.
-    </li>
-	<div class="Row">
-
-
-    <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ress.2021.107900"> Download </a>
-
-		  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
-						<div class="dropdown-content">
-								<p> Reliability-based design approaches via scenario optimization are driven by data thereby eliminating the need for creating a probabilistic model of the uncertain parameters. A scenario approach not only yields a reliability-based design that is optimal for the existing data, but also a probabilistic certificate of its correctness against future data drawn from the same source. In this article, we seek designs that minimize not only the failure probability but also the risk measured by the expected severity of requirement violations. The resulting risk-based solution is equipped with a probabilistic certificate of correctness that depends on both the amount of data available and the complexity of the design architecture. This certificate is comprised of an upper and lower bound on the probability of exceeding a value-at-risk (quantile) level. A reliability interval can be easily derived by selecting a specific quantile value and it is mathematically guaranteed for any reliability constraints having a convex dependency on the decision variable, and an arbitrary dependency on the uncertain parameters. Furthermore, the proposed approach enables the analyst to mitigate the effect of outliers in the data set and to trade-off the reliability of competing requirements.
-							</p>
-			  </div>
-			</div>
+		<a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ress.2019.106755"> Download </a>
 
 			  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
-						<div class="dropdown-content">
-					       <p> @article{ROCCHETTA2021107900,
-title = {A scenario optimization approach to reliability-based and risk-based design: Soft-constrained modulation of failure probability bounds},
-journal = {Reliability Engineering & System Safety},
-volume = {216},pages = {107900},year = {2021},issn = {0951-8320},
-doi = {https://doi.org/10.1016/j.ress.2021.107900},
-url = {https://www.sciencedirect.com/science/article/pii/S095183202100418X},
-author = {Roberto Rocchetta and Luis G. Crespo},
-keywords = {Reliability-based design optimization, Scenario theory, Reliability bounds, Conditional value-at-risk, Constraints relaxation, Lack of data uncertainty, Convex programs},
-abstract = {Reliability-based design approaches via scenario optimization are driven by data thereby eliminating the need for creating a probabilistic model of the uncertain parameters. A scenario approach not only yields a reliability-based design that is optimal for the existing data, but also a probabilistic certificate of its correctness against future data drawn from the same source. In this article, we seek designs that minimize not only the failure probability but also the risk measured by the expected severity of requirement violations. The resulting risk-based solution is equipped with a probabilistic certificate of correctness that depends on both the amount of data available and the complexity of the design architecture. This certificate is comprised of an upper and lower bound on the probability of exceeding a value-at-risk (quantile) level. A reliability interval can be easily derived by selecting a specific quantile value and it is mathematically guaranteed for any reliability constraints having a convex dependency on the decision variable, and an arbitrary dependency on the uncertain parameters. Furthermore, the proposed approach enables the analyst to mitigate the effect of outliers in the data set and to trade-off the reliability of competing requirements.}
-}</p>
-					   </div>
+					<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+							<div class="dropdown-content">
+								<p>
+	 Interval Predictor Models (IPMs) offer a non-probabilistic, interval-valued, characterization of the uncertainty affecting random data generating processes.
+	 IPMs are constructed directly from data, with no assumptions on the distributions of the uncertain factors driving the process, and are therefore exempt from the subjectivity induced by such a practice. The reliability of an IPM defines the probability of correct predictions for future samples and, in practice, its true value is always unknown due to finite samples sizes and limited understanding of the process.
+	 This paper proposes an overview of scenario optimization programs for the identification of IPMs. Traditional IPM identification methods are compared with a new scheme which softens the scenario constraints and exploits a trade-off between reliability and accuracy. The new methods allows prescribing predictors that achieve higher accuracy for a quantifiable reduction in the reliability. Scenario optimization theory is the mathematical tool used to prescribe formal epistemic bounds on the predictors reliability. A review of relevant theorems and bounds is proposed in this work. Scenario-based reliability bounds hold distribution-free, non asymptotically, and quantify the uncertainty affecting the model’s ability to correctly predict future data. The applicability of the new approach is tested on three examples: i) on the modelling of a trigonometric function affected by a noise term, ii) on the identification of a black-box system-controller dynamic response model and, iii) on the modelling of the vibration response of a car suspension arm crossed by a crack of unknown length. The points of strength and limitations of the new IPM are discussed based on the accuracy, computational cost, and width of the resulting epistemic bounds.
+								</p>
+				  </div>
 			</div>
-	 <span class="stretch"></span>
-</div>
+
+				  <div class="dropdown">
+					<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+							<div class="dropdown-content">
+							   <p>@article{ROCCHETTA2021107973,
+	title = {Soft-constrained interval predictor models and epistemic reliability intervals: A new tool for uncertainty quantification with limited experimental data},
+	journal = {Mechanical Systems and Signal Processing},
+	volume = {161},
+	pages = {107973},
+	year = {2021},
+	issn = {0888-3270},
+	doi = {https://doi.org/10.1016/j.ymssp.2021.107973},
+	url = {https://www.sciencedirect.com/science/article/pii/S088832702100368X},
+	author = {Roberto Rocchetta and Qi Gao and Milan Petkovic},
+	keywords = {Interval predictor models, Scenario theory, Epistemic uncertainty, Reliability bounds, Convex optimization, Frequency response function},
+	abstract = {Interval Predictor Models (IPMs) offer a non-probabilistic, interval-valued, characterization of the uncertainty affecting random data generating processes. IPMs are constructed directly from data, with no assumptions on the distributions of the uncertain factors driving the process, and are therefore exempt from the subjectivity induced by such a practice. The reliability of an IPM defines the probability of correct predictions for future samples and, in practice, its true value is always unknown due to finite samples sizes and limited understanding of the process. This paper proposes an overview of scenario optimization programs for the identification of IPMs. Traditional IPM identification methods are compared with a new scheme which softens the scenario constraints and exploits a trade-off between reliability and accuracy. The new methods allows prescribing predictors that achieve higher accuracy for a quantifiable reduction in the reliability. Scenario optimization theory is the mathematical tool used to prescribe formal epistemic bounds on the predictors reliability. A review of relevant theorems and bounds is proposed in this work. Scenario-based reliability bounds hold distribution-free, non asymptotically, and quantify the uncertainty affecting the model’s ability to correctly predict future data. The applicability of the new approach is tested on three examples: i) on the modelling of a trigonometric function affected by a noise term, ii) on the identification of a black-box system-controller dynamic response model and, iii) on the modelling of the vibration response of a car suspension arm crossed by a crack of unknown length. The points of strength and limitations of the new IPM are discussed based on the accuracy, computational cost, and width of the resulting epistemic bounds. </p>
+	}</p>
+  </div>
+ </div>
+ <span class="stretch"></span>
+ </div>
  </span>
 
-<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ress.2021.107900" data-style="small_rectangle">
-</span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
-<!-- --------------------------------------------- -->
-<li><span id="Rocchetta2019_d">.R. Rocchetta, Q. Gao, M. Petkovic
- <i>Soft-constrained interval predictor models and epistemic reliability intervals: A new tool for uncertainty quantification with limited experimental data</i>,
- Mechanical Systems and Signal Processing, Volume 161, 107973, 2021.
-    </li>
-	<div class="Row">
-
-
-    <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ress.2019.106755"> Download </a>
-
-		  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
-						<div class="dropdown-content">
-							<p>
- Interval Predictor Models (IPMs) offer a non-probabilistic, interval-valued, characterization of the uncertainty affecting random data generating processes.
- IPMs are constructed directly from data, with no assumptions on the distributions of the uncertain factors driving the process, and are therefore exempt from the subjectivity induced by such a practice. The reliability of an IPM defines the probability of correct predictions for future samples and, in practice, its true value is always unknown due to finite samples sizes and limited understanding of the process.
- This paper proposes an overview of scenario optimization programs for the identification of IPMs. Traditional IPM identification methods are compared with a new scheme which softens the scenario constraints and exploits a trade-off between reliability and accuracy. The new methods allows prescribing predictors that achieve higher accuracy for a quantifiable reduction in the reliability. Scenario optimization theory is the mathematical tool used to prescribe formal epistemic bounds on the predictors reliability. A review of relevant theorems and bounds is proposed in this work. Scenario-based reliability bounds hold distribution-free, non asymptotically, and quantify the uncertainty affecting the model’s ability to correctly predict future data. The applicability of the new approach is tested on three examples: i) on the modelling of a trigonometric function affected by a noise term, ii) on the identification of a black-box system-controller dynamic response model and, iii) on the modelling of the vibration response of a car suspension arm crossed by a crack of unknown length. The points of strength and limitations of the new IPM are discussed based on the accuracy, computational cost, and width of the resulting epistemic bounds.
-							</p>
-			  </div>
-		</div>
-
-			  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
-						<div class="dropdown-content">
-					       <p>@article{ROCCHETTA2021107973,
-title = {Soft-constrained interval predictor models and epistemic reliability intervals: A new tool for uncertainty quantification with limited experimental data},
-journal = {Mechanical Systems and Signal Processing},
-volume = {161},
-pages = {107973},
-year = {2021},
-issn = {0888-3270},
-doi = {https://doi.org/10.1016/j.ymssp.2021.107973},
-url = {https://www.sciencedirect.com/science/article/pii/S088832702100368X},
-author = {Roberto Rocchetta and Qi Gao and Milan Petkovic},
-keywords = {Interval predictor models, Scenario theory, Epistemic uncertainty, Reliability bounds, Convex optimization, Frequency response function},
-abstract = {Interval Predictor Models (IPMs) offer a non-probabilistic, interval-valued, characterization of the uncertainty affecting random data generating processes. IPMs are constructed directly from data, with no assumptions on the distributions of the uncertain factors driving the process, and are therefore exempt from the subjectivity induced by such a practice. The reliability of an IPM defines the probability of correct predictions for future samples and, in practice, its true value is always unknown due to finite samples sizes and limited understanding of the process. This paper proposes an overview of scenario optimization programs for the identification of IPMs. Traditional IPM identification methods are compared with a new scheme which softens the scenario constraints and exploits a trade-off between reliability and accuracy. The new methods allows prescribing predictors that achieve higher accuracy for a quantifiable reduction in the reliability. Scenario optimization theory is the mathematical tool used to prescribe formal epistemic bounds on the predictors reliability. A review of relevant theorems and bounds is proposed in this work. Scenario-based reliability bounds hold distribution-free, non asymptotically, and quantify the uncertainty affecting the model’s ability to correctly predict future data. The applicability of the new approach is tested on three examples: i) on the modelling of a trigonometric function affected by a noise term, ii) on the identification of a black-box system-controller dynamic response model and, iii) on the modelling of the vibration response of a car suspension arm crossed by a crack of unknown length. The points of strength and limitations of the new IPM are discussed based on the accuracy, computational cost, and width of the resulting epistemic bounds. </p>
-}</p>
-					   </div>
-			</div>
-	 <span class="stretch"></span>
-</div>
- </span>
-
-<!-- --------------------------------------------- -->
+	<!-- --------------------------------------------- -->
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ymssp.2021.107973" data-style="small_rectangle">
 </span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 
-<li><span id="Rocchetta2019_d">. R. Rocchetta, E. Patelli
+<li><span id="Rocchetta2019_d" class="publication-title"> R. Rocchetta, E. Patelli
  <i>A post-contingency power flow emulator for generalized probabilistic risks assessment of power grids</i>,
 Reliability Engineering and System Safety, Volume 197, 106817, 2020.
 
@@ -459,7 +684,7 @@ author = "Roberto Rocchetta and Edoardo Patelli"}</p>
 
 <!-- --------------------------------------------- -->
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, L. G. Crespo, S. P. Kenny,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, L. G. Crespo, S. P. Kenny,
  <i>A scenario optimization approach to reliability-based design</i>,
  Reliability Engineering and System Safety ,Volume 196, 106755, 2020.
     </li>
@@ -502,7 +727,7 @@ abstract = "This article introduces a scenario optimization framework for reliab
 
 <!-- --------------------------------------------- -->
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, M. Compare, L. Bellani, E. Patelli, E. Zio,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, M. Compare, L. Bellani, E. Patelli, E. Zio,
  <i>A Reinforcement Learning Framework for Optimal Operation and Maintenance of Power Grids</i>,
  Applied Energy, Volume 241, pp 291-301, 2019.
     </li>
@@ -542,7 +767,7 @@ abstract = "This article introduces a scenario optimization framework for reliab
 
 <!-- --------------------------------------------- -->
 
-<li><span id="Rocchetta2019_d">. R. Rocchetta, E. Patelli, E. Zio,
+<li><span id="Rocchetta2019_d" class="publication-title"> R. Rocchetta, E. Patelli, E. Zio,
  <i>A Power-Flow Emulator Approach for Resilience Assessment of Repairable Power Grids subject to Weather-Induced Failures and Data Deﬁciency</i>,
 Applied Energy, Volume 210, 15, pp 339-350, 2018.
    </li>
@@ -579,36 +804,36 @@ Applied Energy, Volume 210, 15, pp 339-350, 2018.
 
 <!-- --------------------------------------------- -->
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, E. Patelli,
  <i>Assessment of Power Grid Vulnerabilities Accounting for Stochastic Loads and Model Imprecision</i>,
 , International Journal for Electrical Power and Energy Systems, Volume 98, pp 219-232, 2018.
-   </li>
+</li>
 	<div class="Row">
-    <a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ijepes.2017.11.047">Download</a>     </li>
-
-		  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
-						<div class="dropdown-content">
-								<p>Vulnerability and robustness are major concerns for future power grids. Malicious attacks and extreme weather conditions have the potential to trigger multiple components outages, cascading failures and large blackouts. Robust contingency identification procedures are necessary to improve power grids resilience and identify critical scenarios. This paper proposes a framework for advanced uncertainty quantification and vulnerability assessment of power grids. The framework allows critical failure scenarios to be identified and overcomes the limitations of current approaches by explicitly considering aleatory and epistemic sources of uncertainty modelled using probability boxes. The different effects of stochastic fluctuation of the power demand, imprecision in power grid parameters and uncertainty in the selection of the vulnerability model have been quantified. Spectral graph metrics for vulnerability are computed using different weights and are compared to power-flow-based cascading indices in ranking N-1 line failures and random N-k lines attacks. A rank correlation test is proposed for further comparison of the vulnerability metrics. The IEEE 24 nodes reliability test power network is selected as a representative case study and a detailed discussion of the results and findings is presented.</p>
-					   </div>
-			</div>
+		<a class="Column" style="color:blue;" href="https://doi.org/10.1016/j.ijepes.2017.11.047">Download</a>     </li>
 
 			  <div class="dropdown">
-				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
-						<div class="dropdown-content">
-								<p>@article{ROCCHETTA2018219,
-									title = "Assessment of power grid vulnerabilities accounting for stochastic loads and model imprecision",
-									journal = "International Journal of Electrical Power & Energy Systems",
-									volume = "98",
-									pages = "219 - 232",
-									year = "2018",
-									issn = "0142-0615",
-									doi = "https://doi.org/10.1016/j.ijepes.2017.11.047",
-									author = "Roberto Rocchetta and Edoardo Patelli" }</p>
-					   </div>
-			</div>
-	 <span class="stretch"></span>
-</div>
+					<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
+							<div class="dropdown-content">
+									<p>Vulnerability and robustness are major concerns for future power grids. Malicious attacks and extreme weather conditions have the potential to trigger multiple components outages, cascading failures and large blackouts. Robust contingency identification procedures are necessary to improve power grids resilience and identify critical scenarios. This paper proposes a framework for advanced uncertainty quantification and vulnerability assessment of power grids. The framework allows critical failure scenarios to be identified and overcomes the limitations of current approaches by explicitly considering aleatory and epistemic sources of uncertainty modelled using probability boxes. The different effects of stochastic fluctuation of the power demand, imprecision in power grid parameters and uncertainty in the selection of the vulnerability model have been quantified. Spectral graph metrics for vulnerability are computed using different weights and are compared to power-flow-based cascading indices in ranking N-1 line failures and random N-k lines attacks. A rank correlation test is proposed for further comparison of the vulnerability metrics. The IEEE 24 nodes reliability test power network is selected as a representative case study and a detailed discussion of the results and findings is presented.</p>
+						   </div>
+				</div>
+
+				  <div class="dropdown">
+					<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
+							<div class="dropdown-content">
+									<p>@article{ROCCHETTA2018219,
+										title = "Assessment of power grid vulnerabilities accounting for stochastic loads and model imprecision",
+										journal = "International Journal of Electrical Power & Energy Systems",
+										volume = "98",
+										pages = "219 - 232",
+										year = "2018",
+										issn = "0142-0615",
+										doi = "https://doi.org/10.1016/j.ijepes.2017.11.047",
+										author = "Roberto Rocchetta and Edoardo Patelli" }</p>
+						   </div>
+				</div>
+		 <span class="stretch"></span>
+	</div>
  </span>
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ijepes.2017.11.047" data-style="small_rectangle">
@@ -617,7 +842,7 @@ Applied Energy, Volume 210, 15, pp 339-350, 2018.
 
 <!-- --------------------------------------------- -->
 
-<li><span id="Rocchetta2019_d">. R. Rocchetta, E. Patelli, M. Broggi, Q. Huchet,
+<li><span id="Rocchetta2018_d" class="publication-title"> R. Rocchetta, E. Patelli, M. Broggi, Q. Huchet,
  <i>On-Line Bayesian Model Updating for Structural Health Monitoring</i>,
 Mechanical Sytems and Signal Processing, Volume 103, pp 174-195, 2018.
    </li>
@@ -654,7 +879,7 @@ Mechanical Sytems and Signal Processing, Volume 103, pp 174-195, 2018.
 
 <!-- --------------------------------------------- -->
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli, M. Broggi,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, E. Patelli, M. Broggi,
  <i>Do we have enough data? Robust reliability via uncertainty quantification</i>,
 Applied Mathematical Modelling, Volume 54, pp 710-721, 2018.
     </li>
@@ -672,14 +897,15 @@ Applied Mathematical Modelling, Volume 54, pp 710-721, 2018.
 				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
 						<div class="dropdown-content">
 								<p>@article{ROCCHETTA2018710,
-title = "Do we have enough data? Robust reliability via uncertainty quantification",
-journal = "Applied Mathematical Modelling",
-volume = "54",
-pages = "710 - 721",
-year = "2018",
-issn = "0307-904X",
-doi = "https://doi.org/10.1016/j.apm.2017.10.020",
-author = "Roberto Rocchetta and Matteo Broggi and Edoardo Patelli" }</p>
+									title = "Do we have enough data? Robust reliability via uncertainty quantification",
+									journal = "Applied Mathematical Modelling",
+									volume = "54",
+									pages = "710 - 721",
+									year = "2018",
+									issn = "0307-904X",
+									doi = "https://doi.org/10.1016/j.apm.2017.10.020",
+									author = "Roberto Rocchetta and Matteo Broggi and Edoardo Patelli" }
+								</p>
 					   </div>
 			</div>
 	 <span class="stretch"></span>
@@ -690,7 +916,7 @@ author = "Roberto Rocchetta and Matteo Broggi and Edoardo Patelli" }</p>
 </span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 
-<li><span id="Rocchetta2019_d">. R. Rocchetta, Y.Fu Li, E. Zio,
+<li><span id="Rocchetta2019_d" class="publication-title"> R. Rocchetta, Y.Fu Li, E. Zio,
  <i>Risk Assessment and Risk-Cost Optimization of Distributed Generation Systems Considering Extreme Weather Conditions</i>,
 Reliability Engineering and System Safety, Volume 136, pp 47 - 61, 2015.
 
@@ -702,23 +928,24 @@ Reliability Engineering and System Safety, Volume 136, pp 47 - 61, 2015.
 				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> Abstract  </a> </span>
 						<div class="dropdown-content">
 								<p>Security and reliability are major concerns for future power systems with distributed generation. A comprehensive evaluation of the risk associated with these systems must consider contingencies under normal environmental conditions and also extreme ones. Environmental conditions can strongly influence the operation and performance of distributed generation systems, not only due to the growing shares of renewable-energy generators installed but also for the environment-related contingencies that can damage or deeply degrade the components of the power grid. In this context, the main novelty of this paper is the development of probabilistic risk assessment and risk-cost optimization framework for distributed power generation systems, that take the effects of extreme weather conditions into account. A Monte Carlo non-sequential algorithm is used for generating both normal and severe weather. The probabilistic risk assessment is embedded within a risk-based, bi-objective optimization to find the optimal size of generators distributed on the power grid that minimize both risks and cost associated with severe weather. An application is shown on a case study adapted from the IEEE 13 nodes test system. By comparing the results considering normal environmental conditions and the results considering the effects of extreme weather, the relevance of the latter clearly emerges.</p>
-					   </div>
-			</div>
+					    </div>
+		  </div>
 
-			  <div class="dropdown">
+			  	<div class="dropdown">
 				<span>&nbsp &nbsp &nbsp <a class="Column" style="color:blue;" href="#"> BibTex  </a> </span>
 						<div class="dropdown-content">
 								<p>@article{ROCCHETTA201547,
-title = "Risk assessment and risk-cost optimization of distributed power generation systems considering extreme weather conditions",
-journal = "Reliability Engineering & System Safety",
-volume = "136",
-pages = "47 - 61",
-year = "2015",
-issn = "0951-8320",
-doi = "https://doi.org/10.1016/j.ress.2014.11.013",
-author = "R. Rocchetta and Y.F. Li and E. Zio" }</p>
+									title = "Risk assessment and risk-cost optimization of distributed power generation systems considering extreme weather conditions",
+									journal = "Reliability Engineering & System Safety",
+									volume = "136",
+									pages = "47 - 61",
+									year = "2015",
+									issn = "0951-8320",
+									doi = "https://doi.org/10.1016/j.ress.2014.11.013",
+									author = "R. Rocchetta and Y.F. Li and E. Zio" }
+								</p>
 					   </div>
-			</div>
+				</div>
 	 <span class="stretch"></span>
 </div>
  </span>
@@ -729,11 +956,6 @@ author = "R. Rocchetta and Y.F. Li and E. Zio" }</p>
 
 
  <!-- ##### ##### ##### ##### #####  ##### Peer-reviewed Conference  ####### ##### ##### ##### ##### ##### ##### ##### #####   -->
- <!-- ##### ##### ##### ##### #####  ##### Peer-reviewed Conference  ####### ##### ##### ##### ##### ##### ##### ##### #####   -->
- <!-- ##### ##### ##### ##### #####  ##### Peer-reviewed Conference  ####### ##### ##### ##### ##### ##### ##### ##### #####   -->
- <!-- ##### ##### ##### ##### #####  ##### Peer-reviewed Conference  ####### ##### ##### ##### ##### ##### ##### ##### #####   -->
-
-
  </ol>
  <hr>
 <h3 id="peer-reviewed-confe">Peer-reviewed Conference Papers</h3>
@@ -741,7 +963,7 @@ author = "R. Rocchetta and Y.F. Li and E. Zio" }</p>
    <ol>
 
 
-	   <li><span id="Rocchetta2019_d"> R. Rocchetta,
+	   <li><span id="Rocchetta2021_d" class="publication-title"> R. Rocchetta,
  <i>New probabilistic guarantees on the accuracy of Extreme Learning Machines: an application to decision-making in a reliability context</i>,
 proceedings of ESREL 2021
     </li>
@@ -777,7 +999,7 @@ design is used for the online training of ELMs and empirical validation of the b
 </div>
  </span>
 
-<li><span id="Rocchetta2019_d"> M. De Angelis, R. Rocchetta, A. Gray, S. Ferson,
+<li><span id="Rocchetta2019_d" class="publication-title"> M. De Angelis, R. Rocchetta, A. Gray, S. Ferson,
  <i>Constructing consonant predictive beliefs from data with scenario theory</i>,
 Proceedings of Machine Learning Research. International Symposium on Imprecise Probabilities ISIPTA: Theories and Applications
     </li>
@@ -809,7 +1031,7 @@ We present a practical example in two dimensions for the sake of visualization, 
  </span>
 
 
-<li><span id="Rocchetta2019_d">. R. Rocchetta, L. G. Crespo,
+<li><span id="Rocchetta2019_d" class="publication-title"> R. Rocchetta, L. G. Crespo,
  <i>An Empirical Approach to Reliability-based Design using Scenario Optimization</i>,
 Proceedings of the 2020 ESREL2020-PSAM15 conference
     </li>
@@ -839,7 +1061,7 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
 
 
 
-<li><span id="Rocchetta2019_d">. R. Rocchetta, L. G. Crespo, S. P. Kenny,
+<li><span id="Rocchetta2019_d" class="publication-title"> R. Rocchetta, L. G. Crespo, S. P. Kenny,
  <i>Solution of the Benchmark Control Problem by Scenario Optimization</i>,
  Dynamic Systems and Control Conference, DSCC, Park City, Utha, USA, October 2019.
     </li>
@@ -880,7 +1102,7 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
 
 
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, L. Bing, E. Patelli, G. Sansavini,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, L. Bing, E. Patelli, G. Sansavini,
  <i>Effect of Load-Generation Variability on Power Grid Cascading Failures</i>,
     ESREL 2018 conference, Trondheim, Norway, June 2018.
 	 </li>
@@ -911,7 +1133,7 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
 
 
 
-<li><span id="Rocchetta2019_d">. Ozcel Cangul; Roberto Rocchetta; Edoardo Patelli; Murat Fahrioglu,
+<li><span id="Rocchetta2019_d" class="publication-title"> Ozcel Cangul; Roberto Rocchetta; Edoardo Patelli; Murat Fahrioglu,
  <i> Financially optimal solar power sizing and positioning in a power grid</i>,
     2018 IEEE International Energy Conference (ENERGYCON)
 	 </li>
@@ -946,7 +1168,7 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
 <span class="__dimensions_badge_embed__" data-doi="10.1109/ENERGYCON.2018.8398774" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, M. Compare, E. Patelli, L. Bellani, E. Zio,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, M. Compare, E. Patelli, L. Bellani, E. Zio,
  <i>A Reinforcement Learning Framework for Optimisation of Power Grid Operations and Maintenance</i>,
 8th international workshop on reliable engineering computing, REC 2018, Liverpool, UK, Jully, 2018.
  </li>
@@ -975,7 +1197,7 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
 </div>
  </span>
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, E. Patelli,
  <i>Stochastic Analysis and Reliability-Cost Optimization of Distributed Generators and Air Source Heat Pumps</i>,
   presented at the 2nd International Conference on System Reliability and Safety, ICSRS, 2017. doi: 10.1109/ICSRS.2017.8272792
   </li>
@@ -1010,7 +1232,7 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
 
 <span class="__dimensions_badge_embed__" data-doi="10.1109/ICSRS.2017.8272792" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, E. Patelli,
  <i>An Efficient Framework for Reliability Assessment of Power Networks Installing Renewable Generators and Subject to Parametric P-box Uncertainty</i>,
    Proceedings of the 27th European Safety and Reliability Conference (ESREL 2017), Portoroz, Slovenia, pp. 3253 – 3260.
      </li>
@@ -1042,7 +1264,7 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
 
 <span class="__dimensions_badge_embed__" data-doi="10.1201/9781315210469-411" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-<li><span id="Rocchetta2019_d">.R. Rocchetta, E. Patelli,
+<li><span id="Rocchetta2019_d" class="publication-title">R. Rocchetta, E. Patelli,
  <i>Power Grid Robustness to Severe Failures: Topological and Flow Based Metrics Comparison</i>,
  European Congress on Computational Methods in Applied Sciences and Engineering, ECCOMAS, Crete 2016, pp. 6121-6135.
    </li>
@@ -1067,35 +1289,42 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
  </span>
 
 
-</ol>
-
-
- <!--  ##### Under Review papers  #######   -->
-  <hr>
- <h3 id="under-reviewed">Working papers (tentative title)</h3>
-  <hr>
+</ol>  <!--  ##### Under Review papers  #######   -->
+	  <hr>
+		<h3 id="under-reviewed">Working papers (tentative title)</h3>
+	  <hr>
  <ol>
 
- <li><span id="Rocchetta2019_d">. R. Rocchetta, Q. Gao, M. Petkovic, Dimitrios Mavroeidis,
- <i> "A robust SVM ensemble model for machine fault diagnostics: a selection approach based on sensitivity/specificity bounds, system structural model, and heterogeneous data." </i>,
-  </li> </span>
+
+	 <li><span id="Ozcel_2024" class="publication-title"> Ozcel Cangul; Roberto Rocchetta; Murat Fahrioglu, Edoardo Patelli,
+		 <i>
+			 "Optimal allocation of distributed solar PV via minimization of Conditional Value-at-Risk of voltage deviations"
+		 </i>, (in preparation)
+	 </li>
 
 
- <li><span id="Rocchetta2019_d">. Ozcel Cangul; Roberto Rocchetta; Murat Fahrioglu, Edoardo Patelli,
- <i> "Optimal allocation of distributed solar PV via minimization of Conditional Value-at-Risk of voltage deviations"</i>,
-(under review) </li> </span>
+	 <li><span id="CongedutiElena2024" class="publication-title"> Elena Congeduti, Roberto Rocchetta; Frans Oliehoek,
+		 <i>
+			 "Influence Learning in Complex Systems"
+		 </i>,	(in preparation)
+	 </li>
 
- <li><span id="Rocchetta2019_d">. Ozcel Cangul; Roberto Rocchetta; Murat Fahrioglu, Edoardo Patelli,
- <i> "Optimal allocation and sizing of distributed solar PV generators: Unit financial impact indicator"</i>,
-(under review) </li> </span>
 
- <li><span id="Rocchetta2019_d">. Alexander Mey, Roberto Rocchetta; Frans Oliehoek,
- <i> " Exploring the link between learnability via compression and complexity and scenario decision-making theory: the case of Support Vector Machine classifiers"</i>,
-(work in progress) </li> </span>
+	 <li><span id="PierreDersin_2024_a" class="publication-title"> Pierre Dersin; Roberto Rocchetta,
+		 <i>
+			 "Uncertainty bounds on RUL via an analytical time warping approach"
+		 </i>, (submitted)
+     </li>
 
- <li><span id="Rocchetta2019_d">.R.Rocchetta, A. Grey, ....
- <i> "Solution to the NASA 2020 UQ challenge problem"</i>,
-(work in progress) </li> </span>
+	 <li><span id="Rocchetta_2024_a" class="publication-title">  Roberto Rocchetta et al,
+		 <i>
+			 "Optimization of Mobility Incentives in Electric Vehicle Car Sharing Systems: A Reinforcement Learning Framework"
+		 </i>, (submitted)
+     </li>
+
+
+
+
 
   <!--  ##### Other Activities  #######   -->
 </ol>
@@ -1103,36 +1332,43 @@ Proceedings of the 2020 ESREL2020-PSAM15 conference
 <h3 id="talks">Talks, teaching, workshops seminars and other activities</h3>
  <hr>
 <ol>
-	<li><strong> </strong>. Do we have enought data? Workshope at the National Insitute of Aerospace </li>
-	<li><strong> </strong>. Workshop on resilience assessment of power grid under extreme weather events, Prague Resilience International Workshop 2018 </li>
-        <li><strong> </strong>. Conference presentation at the international conference SIAM UQ held at EPFL Lausanne  </li>
-	<li><strong> </strong>. Open Cossan and Cossan X software presentation at the international conference SIAM UQ held at EPFL Lausanne  </li>
-	<li><strong> </strong>. Newsletter ESRA september 2019  </li> <a class="Column" style="color:blue;"  href="http://www.esrahomepage.eu/filehandler.ashx?file=16817">Download ESRA Newsletter</a>
+	<li><strong> </strong> Best Reviewer Award ASME Journal </li>
+	<li><strong> </strong> Do we have enought data? Worshop Presentation at the National Institute of Aerospace </li>
+	<li><strong> </strong> Workshop on resilience assessment of power grid under extreme weather events, Prague Resilience International Workshop 2018 </li>
+	<li><strong> </strong> Conference presentation at the international conference SIAM UQ held at EPFL Lausanne  </li>
+	<li><strong> </strong>Open Cossan and Cossan X software presentation at the international conference SIAM UQ held at EPFL Lausanne  </li>
+	<li><strong> </strong> Newsletter ESRA september 2019  </li> <a class="Column" style="color:blue;"  href="http://www.esrahomepage.eu/filehandler.ashx?file=16817">Download ESRA Newsletter</a>
+	<li><strong> </strong> Topic Board Editor for the journal Mathematics, MDPI  </li>
+	<li><strong> </strong> Technical committee:  International Symposium on Reliability Engineering and Risk Management, 2022, Hannover, GER</li>
+	<li><strong> </strong> Chair: w3-1 contributed section: uncertain systems and robustness at the Dynamic Systems and Control Conference 2019, Grand Summit Hotel, Park City, Utah, USA</li>
+	<li><strong> </strong> Seminar: March-13-2019 | Accounting for Uncertainty Caused by Lack of Data and Conflicting Knowledge. Robust Reliability via Uncertainty Quantification, National Institute for aerospace (NIA), Hampton, Virginia, USA</li>
+	<li><strong> </strong> Technical committee local: International Workshop on Reliable Engineering Computing 2018, , Liverpool, UK </li>
+	<li><strong> </strong> Poster: COSSAN X software for uncertainty quantification, international conference SIAM UQ 2016, EPFL Lausanne </li>
+	<li><strong> </strong> Reviewer for NOW (Dutch research council) </li>
+	<li><strong> </strong> Reviewer for the journal Applied Energy, Elsevier</li>
+	<li><strong> </strong> Reviewer for the International Journal of Electrical Power & Energy Systems, Elsevier</li>
+	<li><strong> </strong> Reviewer for the journal Mechanical Systems and Signal Processing, Elsevier</li>
+	<li><strong> </strong> Reviewer for the journal Reliability engineering and system safety, Elsevier</li>
+	<li><strong> </strong> Reviewer for the journal Engineering Reports, Wiley</li>
+	<li><strong> </strong> Reviewer for the IET Generation, Transmission & Distribution, Wiley</li>
+	<li><strong> </strong> Reviewer for the journal Energies, MDPI</li>
+	<li><strong> </strong> Reviewer for the journal Mathematics, MDPI</li>
+	<li><strong> </strong> European Safety and Reliability Association, Newsletter ESRA September 2019 </li>
 
-•	<li><strong> </strong>. Topic Board Editor for the journal Mathematics, MDPI  </li>
-•	<li><strong> </strong>. Technical committee:  International Symposium on Reliability Engineering and Risk Management, 2022, Hannover, GER</li>
-•	<li><strong> </strong>. Chair: w3-1 contributed section: uncertain systems and robustness at the Dynamic Systems and Control Conference 2019, Grand Summit Hotel, Park City, Utah, USA</li>
-•	<li><strong> </strong>. Seminar: March-13-2019 | Accounting for Uncertainty Caused by Lack of Data and Conflicting Knowledge. Robust Reliability via Uncertainty Quantification, National Institute for aerospace (NIA), Hampton, Virginia, USA</li>
-•	Technical committee local: International Workshop on Reliable Engineering Computing 2018, , Liverpool, UK </li>
-•	<li><strong> </strong>. Poster: COSSAN X software for uncertainty quantification, international conference SIAM UQ 2016, EPFL Lausanne </li>
-•	<li><strong> </strong>. Reviewer for NOW (Dutch research council) </li>
-•	<li><strong> </strong>. Reviewer for the journal Applied Energy, Elsevier</li>
-•	<li><strong> </strong>. Reviewer for the International Journal of Electrical Power & Energy Systems, Elsevier</li>
-•	<li><strong> </strong>. Reviewer for the journal Mechanical Systems and Signal Processing, Elsevier</li>
-•	<li><strong> </strong>. Reviewer for the journal Reliability engineering and system safety, Elsevier</li>
-•	<li><strong> </strong>. Reviewer for the journal Engineering Reports, Wiley</li>
-•	<li><strong> </strong>. Reviewer for the IET Generation, Transmission & Distribution, Wiley</li>
-•	<li><strong> </strong>. Reviewer for the journal Energies, MDPI</li>
-•	<li><strong> </strong>. Reviewer for the journal Mathematics, MDPI</li>
-•	<li><strong> </strong>. European Safety and Reliability Association, Newsletter ESRA September 2019 </li>
 
 
-</ol>
 
-</div>
-
+        </ol>
     </div>
 
-  </body>
+    <footer>
+        <ul>
+            <li><a href="mailto:roberto.rocchetta88@gmail.com">email</a></li>
+            <li><a href="https://github.com/Roberock">github.com/Roberock</a></li>
+        </ul>
+    </footer>
+</body>
 </html>
+
+
 
