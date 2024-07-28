@@ -6,7 +6,7 @@ body {
     color: #333333;
 }
 
-nav {
+.navbar {
     background-color: #1c1c1c;
     position: fixed;
     width: 100%;
@@ -17,14 +17,18 @@ nav {
     padding: 10px 0;
 }
 
-nav ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav ul a {
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -34,13 +38,17 @@ nav ul a {
     transition: background-color 0.3s, color 0.3s;
 }
 
-nav ul a:hover {
+.navbar li a:hover {
     background-color: #4CAF50;
     color: #ffffff;
 }
 
-.container {
-    padding: 100px 20px;  /* Adjusted padding to account for the nav bar */
+.navbar li a.active {
+    background-color: #4CAF50;
+}
+
+.content {
+    padding: 80px 20px;
     max-width: 800px;
     margin: auto;
 }
@@ -52,7 +60,33 @@ nav ul a:hover {
     border-radius: 50%;
     width: 150px;
     margin-bottom: 20px;
-    border: 5px solid #4CAF50;
+    border: 5px solid #007903;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007903;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.media-logos {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.media-logos a {
+    color: #007903;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.media-logos a:hover {
+    color: #1c1c1c;
 }
 
 .bibliography {
@@ -69,7 +103,7 @@ nav ul a:hover {
 }
 
 .publication-title {
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .dropdown {
@@ -80,8 +114,8 @@ nav ul a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 460px;
+    background-color: rgba(242, 246, 244, 0.99);
+    min-width: 560px;
     width: 98%;
     box-shadow: 0px 8px 26px 0px rgba(0,0,0,0.2);
     padding: 12px 20px;
@@ -93,14 +127,26 @@ nav ul a:hover {
     display: block;
 }
 
-.publication a {
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
     color: #4CAF50;
     text-decoration: none;
 }
 
-.publication a:hover {
+.contact-info a:hover {
     text-decoration: underline;
 }
+
+
+
 
 footer {
     background-color: #1c1c1c;
@@ -111,6 +157,7 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 
 footer ul {
     list-style-type: none;
@@ -132,6 +179,11 @@ footer ul a {
 footer ul a:hover {
     color: white;
 }
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
     nav ul {
