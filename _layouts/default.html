@@ -1,28 +1,118 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-			<a href="/pubs">Publications</a> |
-			<a href="/cv/">CV</a> |
-			<a href="/about">About</a> |
-			<a href="/projects">Projects</a>
-    		</ul>
-		</nav>
-		<div class="container">
+<head>
+    <title>{{ page.title }}</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333333;
+        }
 
-			{{ content }}
-			</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:roberto.rocchetta88@gmail.com">email</a></li>
-        		<li><a href="https://github.com/Roberock">github.com/Roberock</a></li>
-			</ul>
-		</footer>
-	</body>
+        nav {
+            background-color: #1c1c1c;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul a:hover {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+
+        .container {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        footer {
+            background-color: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul a:hover {
+            color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            footer ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="/pubs">Publications</a> |
+            <a href="/cv/">CV</a> |
+            <a href="/about">About</a> |
+            <a href="/projects">Projects</a>
+        </ul>
+    </nav>
+    <div class="container">
+        {{ content }}
+    </div><!-- /.container -->
+    <footer>
+        <ul>
+            <li><a href="mailto:roberto.rocchetta88@gmail.com">email</a></li>
+            <li><a href="https://github.com/Roberock">github.com/Roberock</a></li>
+        </ul>
+    </footer>
+</body>
 </html>

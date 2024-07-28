@@ -14,45 +14,41 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333333;
+            background-color: #f4f4f4;
         }
 
         .navbar {
-            background-color: #1c1c1c;
+            background-color: #333;
             position: fixed;
             width: 100%;
             z-index: 1;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
         }
 
         .navbar ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            overflow: hidden;
+            background-color: #333;
             display: flex;
+            justify-content: center;
         }
 
         .navbar li {
-            margin: 0 20px;
+            float: left;
         }
 
         .navbar li a {
             display: block;
             color: white;
             text-align: center;
-            padding: 10px 20px;
+            padding: 14px 16px;
             text-decoration: none;
-            font-size: 18px;
-            transition: background-color 0.3s, color 0.3s;
+            transition: background-color 0.3s;
         }
 
         .navbar li a:hover {
-            background-color: #4CAF50;
-            color: #ffffff;
+            background-color: #575757;
         }
 
         .navbar li a.active {
@@ -60,9 +56,8 @@
         }
 
         .content {
-            padding: 80px 20px;
-            max-width: 800px;
-            margin: auto;
+            padding: 16px;
+            margin-top: 60px;
         }
 
         .profile-pic {
@@ -71,18 +66,18 @@
             margin-right: auto;
             border-radius: 50%;
             width: 150px;
-            margin-bottom: 20px;
-            border: 5px solid #007903;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             text-align: center;
-            color: #007903;
+            color: #333;
         }
 
         p {
             text-align: justify;
-            line-height: 1.8;
+            color: #555;
+            line-height: 1.6;
         }
 
         .media-logos {
@@ -92,13 +87,13 @@
         }
 
         .media-logos a {
-            color: #007903;
+            color: #333;
             margin: 0 10px;
             transition: color 0.3s;
         }
 
         .media-logos a:hover {
-            color: #1c1c1c;
+            color: #4CAF50;
         }
 
         .contact-info {
@@ -138,12 +133,11 @@
             <li><a href="/ListofPubblications"><b>Publications</b></a></li>
             <li><a href="/cv/CV_RobeRock.pdf"><b>CV</b></a></li>
             <li><a href="/about"><b>About</b></a></li>
-            <li><a href="/projects"><b> Projects</b></a></li>
         </ul>
     </div>
 
     <div class="content">
-        <img alt="photo" class="profile-pic" src="/public/img/MyProfilePic2.png" />
+        <img alt="photo" class="profile-pic" src="/img/Myprofilepic.jpg" />
         <h1>Roberto Rocchetta</h1>
         <div class="media-logos">
             <a href="https://github.com/Roberock"><i class="fa fa-github fa-2x"></i></a>
@@ -154,18 +148,10 @@
         </div>
 
         <h2 id="profile">Bio</h2>
-        <p>Roberto Rocchetta is a distinguished researcher within the Intelligent Energy Systems group at SUPSI-DACD-ISAAC.
-            He holds a Master's degree in Energy Engineering from the University of Bologna (Italy) and a Ph.D. in Reliability Engineering from the University of Liverpool (UK).
-            His career includes significant tenures at renowned institutions such as NIA/NASA-Langley (Virginia, USA) and TU Eindhoven.
-            Roberto's research expertise lies in decision-making under risk and uncertainty, intelligent energy systems management and optimization, uncertainty quantification, and reliability/risk-based design. His multidisciplinary approach integrates concepts from system reliability engineering, statistical learning theory, stochastic optimization, uncertainty quantification, and machine learning.
-            Roberto has contributed more than 15 peer-reviewed journal articles and his work (2018-2024), garnered over 900 citations, underscoring its significant impact on the academic and research community.
-
-
-
-            Roberto Rocchetta is a researcher within the Intelligent energy system group (SUPSI-DACD-ISAAC). He holds a Master in Energy engineering from Bologna (IT), a PhD in Reliability engineering Liverpool (UK) and he worked in prestigious institutes and universities such as NIA/NASA-Langley (Virginia USA) and TU/Eindhoven.
+        <p>Roberto Rocchetta is a researcher within the Intelligent energy system group (SUPSI-DACD-ISAAC). He holds a Master in Energy engineering from Bologna (IT), a PhD in Reliability engineering Liverpool (UK) and he worked in prestigious institutes and universities such as NIA/NASA-Langley (Virginia USA) and TU/Eindhoven.
             Roberto's research focuses on decision-making under risk and uncertainty, intelligent energy systems management and optimization, uncertainty quantification and reliability/risk based design.
             Rocchetta's research is highly multidisciplinary and combines ideas from system reliability engineering, statistical learning theory, stochastic optimization, uncertainty quantification and machine learning. He is the first author of more than 10 peer-reviewed journal articles and more than 15 conference papers.
-            His works, despite being relatively new (2018-2024), already gathered more than 380 citations and had a striking impact on the research community.
+            His works, despite being relatively new (2018-2021), already gathered more than 380 citations and had a striking impact on the research community.
         </p>
 
         <h2 id="academic-background">Academic Background, Visiting & Placements</h2>
@@ -193,5 +179,4 @@
         </div>
     </div>
 </body>
-
 </html>
