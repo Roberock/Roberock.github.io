@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="en">
 
 <head>
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <!-- Enable responsiveness on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Rocchetta</title>
+    <link rel="stylesheet" href="/css/main.css">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
-            color: #333333;
+            color: #333;
         }
 
         .navbar {
@@ -51,7 +48,7 @@
 
         .navbar li a:hover {
             background-color: #4CAF50;
-            color: #ffffff;
+            color: #fff;
         }
 
         .navbar li a.active {
@@ -62,26 +59,18 @@
             padding: 80px 20px;
             max-width: 800px;
             margin: auto;
+            text-align: center;
         }
 
         .profile-pic {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
             border-radius: 50%;
             width: 150px;
             margin-bottom: 20px;
             border: 5px solid #007903;
         }
 
-        h1, h2 {
-            text-align: center;
+        h1 {
             color: #007903;
-        }
-
-        p {
-            text-align: justify;
-            line-height: 1.8;
         }
 
         .media-logos {
@@ -100,9 +89,23 @@
             color: #1c1c1c;
         }
 
-        .contact-info {
-            text-align: center;
+        .img-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
             margin-top: 20px;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
         }
 
         .contact-info p {
@@ -117,16 +120,6 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
-
-        @media screen and (max-width: 600px) {
-            .navbar ul {
-                flex-direction: column;
-            }
-
-            .navbar li {
-                float: none;
-            }
-        }
     </style>
 </head>
 
@@ -137,13 +130,12 @@
             <li><a href="/ListofPubblications"><b>Publications</b></a></li>
             <li><a href="/cv/CV_RobeRock.pdf"><b>CV</b></a></li>
             <li><a href="/about"><b>About</b></a></li>
-            <li><a href="/projects"><b> Projects</b></a></li>
+            <li><a href="/projects"><b>Projects</b></a></li>
         </ul>
     </div>
 
-
     <div class="content">
-        <img alt="photo" class="profile-pic" src="/public/img/MyProfilePic2.png" />
+        <img src="/public/img/MyProfilePic2.png" alt="Roberto Rocchetta" class="profile-pic">
         <h1>Roberto Rocchetta</h1>
         <div class="media-logos">
             <a href="https://github.com/Roberock"><i class="fa fa-github fa-2x"></i></a>
@@ -153,30 +145,27 @@
             <a href="https://www.researchgate.net/profile/Roberto_Rocchetta"><i class="ai ai-researchgate ai-2x"></i></a>
         </div>
 
-        <h2 id="Work-related Images">Work-related Images</h2>
+        <h2>Work-related Images</h2>
         <div class="img-container">
             <img src="/public/img/DgOMCS_WsAAJIpd.jpg" alt="Work image 1">
             <img src="/public/img/IMG_1302-700x525.jpg" alt="Work image 2">
             <img src="/public/img/Recognition_IJEPES.png" alt="Recognition IJEPES">
-            <img src="/public/img/ASME_outstanding_review_bedge.png" alt="ASME Reviewer Bedge">
+            <img src="/public/img/ASME_outstanding_review_bedge.png" alt="ASME Reviewer Badge">
             <img src="/public/img/Recognition_IJEPES.png" alt="Recognition IJEPES">
+            <img src="/public/img/award_reviewer.jpg" alt="award best reviewer">
+
         </div>
     </div>
 
-        <h2 id="contact">Contact</h2>
-        <div class="contact-info">
-            <div itemscope itemtype="https://schema.org/Person">
-                <a itemprop="sameAs" content="https://orcid.org/0000-0002-8117-8737" href="https://orcid.org/0000-0002-8117-8737" target="orcid.widget" rel="me noopener noreferrer">
-                    <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8117-8737
-                </a>
-            </div>
-            <p> <b> Get in touch! </b>  </p>
-            <p> Institutional: <a href="mailto:roberto.rocchetta@supsi.ch">Send Email: roberto.rocchetta@supsi.ch</a></p>
-            <p> Private: <a href="mailto:roberto.rocchetta@supsi.ch">Send Email: roberto.rocchetta@supsi.ch</a>/p>
-            <p> <b> For more see: </b> </p>
-            <p> My institutional pages:  <a href="https://www.supsi.ch/roberto-rocchetta"> SUPSI Web Page</a>.</p>
-            <p> Projects and mission of our group at: <a href="https://supsi-dacd-isaac.github.io/"> ISAAA-DACD-SUPSI Web Page </a>.</p>
-        </div>
+    <div class="contact-info">
+        <h2>Contact</h2>
+        <p><b>Get in touch!</b></p>
+        <p>Institutional: <a href="mailto:roberto.rocchetta@supsi.ch">roberto.rocchetta@supsi.ch</a></p>
+        <p>Private: <a href="mailto:roberto.rocchetta@supsi.ch">roberto.rocchetta@supsi.ch</a></p>
+        <p><b>For more, see:</b></p>
+        <p>My institutional page: <a href="https://www.supsi.ch/roberto-rocchetta">SUPSI Web Page</a></p>
+        <p>Projects and mission of our group at: <a href="https://supsi-dacd-isaac.github.io/">ISAAA-DACD-SUPSI Web Page</a></p>
+    </div>
 </body>
 
 </html>
